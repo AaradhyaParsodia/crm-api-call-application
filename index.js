@@ -1,12 +1,13 @@
 import express from "express";
 import 'dotenv/config';
+import { rootRouter } from "./src/route/index.js";
 
 const app = express();
 const port = process.env.PORT;
 
 app.use(express.json());
 
-app.use("/crm/api/v1")
+app.use("/api/v1", rootRouter);
 
 app.get('/', (req,res)=>{
     res.status(200).json({msg:"do it"});
