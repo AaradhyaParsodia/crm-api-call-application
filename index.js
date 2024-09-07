@@ -1,6 +1,6 @@
 import express from "express";
 import 'dotenv/config';
-import { rootRouter } from "./src/route/index.js";
+import { rootRouter } from "./src/routes/index.js";
 
 const app = express();
 const port = process.env.PORT;
@@ -13,10 +13,10 @@ app.get('/', (req,res)=>{
     res.status(200).json({msg:"do it"});
 });
 
-app.use((err, req, res, next) => {
-    console.error(err);
-    res.status(500).send({ message: "Internal Server Error by global error handler" });
-});
+// app.use((err, req, res, next) => {
+//     console.error(err);
+//     res.status(500).send({ message: "Internal Server Error by global error handler" });
+// });
 
 app.listen(port, (err)=>{
     if(!err){
