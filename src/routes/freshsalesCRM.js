@@ -6,9 +6,9 @@ import {
     controllerDELETE,
 } from "../controller/crm/index.js";
 
-export const freshsalesCRMRouter = Router();
+export const contactRouter = Router();
 
-freshsalesCRMRouter.post("/createContact", controllerCREATE.createContact);
-freshsalesCRMRouter.get("/getContact/:contactId", controllerGET.getContact);
-freshsalesCRMRouter.put("/updateContact/:contactId", controllerUPDATE.updateContact);
-freshsalesCRMRouter.delete("/deleteContact/:contactId", controllerDELETE.deleteContact);
+contactRouter.post("/createContact", controllerCREATE.createContact);
+contactRouter.get("/getContact/:contactId", controllerGET.getContact);
+contactRouter.put("/updateContact/:contactId", controllerUPDATE.updateContact);
+contactRouter.delete("/deleteContact/:contactId", controllerDELETE.deleteContact);

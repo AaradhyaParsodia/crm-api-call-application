@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { freshsalesCRMRouter } from "./freshsalesCRM.js";
+import { contactRouter } from "./freshsalesCRM.js";
 
 export const rootRouter = Router();
 
-rootRouter.use("/crm", freshsalesCRMRouter);
+rootRouter.use("/contact", contactRouter);
