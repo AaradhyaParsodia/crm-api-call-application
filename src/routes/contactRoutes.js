@@ -4,7 +4,7 @@ import {
     controllerCREATE,
     controllerUPDATE,
     controllerDELETE,
-} from "../controller/crm/index.js";
+} from "../controller/index.js";
 
 export const contactRouter = Router();
 

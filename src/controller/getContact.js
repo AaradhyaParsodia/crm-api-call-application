@@ -1,5 +1,5 @@
 import axios from "axios";
-import pool from "../../config/mysqlConnection.js";
+import pool from "../config/mysqlConnection.js";
 
 const API_KEY = process.env.FRESHWORK_API;
 const DOMAIN = process.env.DOMAIN_URL;

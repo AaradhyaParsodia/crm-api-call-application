@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { contactRouter } from "./freshsalesCRM.js";
+import { contactRouter } from "./contactRoutes.js";
 
 export const rootRouter = Router();
 
